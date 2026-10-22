@@ -1,0 +1,13 @@
+[Unit]
+Description=Offline reference server (Kiwix) for the ZIM books
+Documentation=https://kiwix.org
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/kiwix-serve --port 8080 --address 127.0.0.1 /usr/share/kiwix/zim
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

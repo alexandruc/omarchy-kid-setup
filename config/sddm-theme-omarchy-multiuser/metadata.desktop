@@ -1,0 +1,7 @@
+[SddmGreeterTheme]
+Name=Omarchy (multi-user)
+Description=Omarchy terminal-style login theme with a user chooser
+Author=local
+Type=sddm-theme
+Version=1.0
+QtVersion=6
